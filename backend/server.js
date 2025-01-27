@@ -20,4 +20,12 @@ app.use('/api/auth', authRoutes);
 app.use('/api/items', itemRoutes);
 
 const PORT = process.env.PORT || 5000;
+
+// Serve static files from the Next.js build
+app.use(express.static(path.join(__dirname, "../frontend/out")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/out/index.html"));
+});
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
