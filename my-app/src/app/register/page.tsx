@@ -36,14 +36,14 @@ const RegisterPage = () => {
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full font-mono mb-4 px-3 py-2 border-b-2 border-r-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full text-black font-mono mb-4 px-3 py-2 border-b-2 border-r-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="w-full font-mono mb-4 px-3 py-2 border-b-2 border-r-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full text-black font-mono mb-4 px-3 py-2 border-b-2 border-r-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <button
           type="submit"
