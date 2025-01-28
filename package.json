@@ -6,7 +6,7 @@
   "scripts": {
     "install:all": "npm install --prefix backend && npm install --prefix my-app",
     "dev": "concurrently \"npm start --prefix backend\" \"npm run dev --prefix my-app\"",
-    "build": "npm run build --prefix my-app && npm install --prefix backend",
+    "build": "npm run dev --prefix my-app && npm install --prefix backend",
     "start": "node backend/server.js"
   },
   "keywords": [],
