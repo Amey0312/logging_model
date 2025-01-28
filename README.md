@@ -23,22 +23,23 @@ Prerequisites
 
 Steps
 
-    Clone the Repository:
+Clone the Repository:
 
-git clone https://github.com/Amey0312/logging_model.git
+    git clone https://github.com/Amey0312/logging_model.git
 
 
 Install Dependencies:
 
-npm install
-# or
-yarn install
+    npm install
+    # or
+    yarn install
 
 Set Environment Variables: Create a .env file in the root directory with the following keys:
 
-PORT=<backend-port>
-MONGO_URI=<mongodb-connection-string> # if using MongoDB
-JWT_SECRET=<your-jwt-secret>
+    
+    PORT=<backend-port>
+    MONGO_URI=<mongodb-connection-string> # if using MongoDB
+    JWT_SECRET=<your-jwt-secret>
 
 Start the Backend Server: Navigate to the backend directory and run:
 
@@ -60,10 +61,12 @@ The application is deployed at: https://logging-model.onrender.com
 
 Run Commands
 
-    Frontend:
+Frontend:
+    
+    cd my-app
+    npm run dev
 
-cd my-app
-npm run dev
+
 
 Backend:
 
